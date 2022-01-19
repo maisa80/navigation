@@ -1,0 +1,143 @@
+/* * a selector that effects all elements */
+* {
+    /* 
+    A setting that makes sure that paddings and borders are included in the total widht/height.
+    and NOT added to the total width/heigh
+    */
+    box-sizing: border-box;
+}
+/* 
+#boxes {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: inline-block;
+    height: 100px;
+    width: 31.7%;
+    margin: 0 auto;
+    margin-right: 2%;
+}
+
+.box:first-child {
+    background-color:paleturquoise;
+}
+
+.box:nth-child(2) {
+    background-color:indianred;
+}
+
+.box:last-child {
+    margin: 0;
+    background-color:goldenrod;
+} */
+
+
+#container {
+    /* border: 1px solid #333;
+    height: 600px; */
+    width: 960px;
+    margin: 20px auto;
+}
+
+#header,
+#sidebar,
+#main-content,
+#footer,
+.box {
+    padding: 20px;
+}
+
+#header {
+    /* background-color: skyblue; */
+    height: 100px;
+    margin-bottom: 20px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+#content {
+    /* background-color: beige; */
+    height: 300px;
+}
+
+#sidebar {
+    /* background-color: pink; */
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 160px;
+    margin-right: 20px;
+    border-right: 1px solid #333;
+}
+
+#main-content {
+    /* background-color: beige; */
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 776px;
+}
+
+#footer {
+    background-color: rgb(33, 33, 88);
+    height: 100px;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Main nav */
+/* Sidebar nav */
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 8px 16px; /* top/bottom left/right */
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+
+#main-nav > ul > li {
+    float: left;
+}
+
+/* #main-nav > ul > li > a:active {
+    background-color: red;
+} */
+
+
+#dropdown-btn {
+    position: relative;
+}
+
+/* Dropdown menu */
+#dropdown-content {
+    display: none;
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#dropdown-btn:hover #dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color:rgb(33, 33, 88);
+    color: white;
+}
